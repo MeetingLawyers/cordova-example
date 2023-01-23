@@ -46,31 +46,6 @@ function onDeviceReady() {
           .innerHTML = '<p class="event received">' + err + '</p>';
       }
     );
-
-    // meetinglawyers.echo(
-    //     'Plugin Ready!',
-    //     function(msg) {
-    //       document
-    //         .getElementById('deviceready')
-    //         .querySelector('.received')
-    //         .innerHTML = msg;
-    //     },
-    //     function(err) {
-    //       document
-    //         .getElementById('deviceready')
-    //         .innerHTML = '<p class="event received">' + err + '</p>';
-    //     }
-    //   );
-      
-    //   meetinglawyers.echojs(
-    //     'Hello Plugin',
-    //     function(msg) {
-    //       document.getElementsByTagName('h1')[0].innerHTML = msg;
-    //     },
-    //     function(err) {
-    //       document.getElementsByTagName('h1')[0].innerHTML = err;
-    //     }
-    //   );
 }
 
 function openML() {
