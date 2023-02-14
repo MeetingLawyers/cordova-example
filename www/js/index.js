@@ -29,7 +29,7 @@ function onDeviceReady() {
     document.getElementById("open_ml").addEventListener("click", openML);
 
     meetinglawyers.initialize(
-      'ZpcNb4kmV6DBpZrK',
+      '09fc3cbf545a007a',
       'DEVELOPMENT',
       function() {
         document
@@ -37,8 +37,11 @@ function onDeviceReady() {
           .querySelector('.received')
           .innerHTML = 'OK!';
 
-          meetinglawyers.primaryColor('#2ECD71');
-          meetinglawyers.secondaryColor('#27ae60');
+          meetinglawyers.setStyle({ primaryColor : "#2ECD71", 
+                                    secondaryColor : "#27ae60",
+                                  specialityColor: "#00FF00",
+                                navigationColor: "#0000FF"},
+                                    function() {}, function(err) {});
       },
       function(err) {
         document
@@ -52,21 +55,21 @@ function openML() {
   console.log('On click open ML');
 
   meetinglawyers.authenticate(
-    'manel.roca@meetinglawyers.com',
+    '00000002W',
     function() {
       document
         .getElementById('deviceready')
         .querySelector('.received')
         .innerHTML = "Authenticated";
       
-      meetinglawyers.open_list(function() {}, function(err) {});
+      meetinglawyers.openList(function() {}, function(err) {});
     },
     function(err) {
       document
         .getElementById('deviceready')
         .innerHTML = '<p class="event received">' + err + '</p>';
 
-      meetinglawyers.open_list(function() {}, function(err) {});
+      meetinglawyers.openList(function() {}, function(err) {});
     }
   );
 }
