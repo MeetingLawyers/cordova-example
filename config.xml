@@ -8,5 +8,11 @@
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    
+        <platform name="android">
+        <resource-file src="google-services.json" target="app/google-services.json" />
+        <resource-file src="www/img/navigation.png" target="app/src/main/res/drawable/logo_ml.png" />
+    </platform>
+    <platform name="ios">
+        <resource-file src="GoogleService-Info.plist" />
+    </platform>
 </widget>
