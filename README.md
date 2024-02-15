@@ -15,7 +15,7 @@ node
 npm
 
 #Install:
-npm install -g cordova
+npm install -g cordova@11.0.0
 
 #Add Plugin:
 cordova plugin add https://github.com/MeetingLawyers/cordova-plugin-meetinglawyers
@@ -38,7 +38,12 @@ cordova platform add android
 
 The `platforms/android/com-meetinglawyers-cordova` its important because contains xxxx-plugin.gradle file we must edit as documentation:
 
+now launch:
+ ```
+cordova prepare android
+ ```
 
+ 
 Now if you import project will launch an error:
 
  ```

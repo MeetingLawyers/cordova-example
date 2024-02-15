@@ -1,0 +1,28 @@
+repositories {
+    google()
+    jcenter()
+    maven {
+            url = "https://maven.pkg.github.com/MeetingLawyers/android-sdk-chat/"
+            credentials {
+                // ask credentials to support@meetinglawyers.com
+                username = "mobileML"
+                password = "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"
+            }
+        }
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+dependencies {
+    implementation 'com.meetinglawyers:sdk:1.1.58'
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.firebase:firebase-core'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-inappmessaging-display-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx'
+    implementation 'com.google.firebase:firebase-config-ktx'
+    implementation 'com.google.firebase:firebase-iid'
+}
