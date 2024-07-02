@@ -9,4 +9,10 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     
+    <!-- Platform Configs & Platform Overriding Configs -->
+    <platform name="android"></platform>
+    <platform name="ios">
+        <preference name="UseSwiftLanguageVersion" value="4" />
+        <preference name="SwiftVersion" value="4" />
+    </platform>
 </widget>

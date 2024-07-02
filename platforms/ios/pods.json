@@ -1,0 +1,29 @@
+{
+    "declarations": {
+        "use_frameworks!": {
+            "declaration": "use_frameworks!",
+            "count": 1
+        }
+    },
+    "sources": {
+        "https://cdn.cocoapods.org/": {
+            "source": "https://cdn.cocoapods.org/",
+            "count": 1
+        },
+        "https://bitbucket.org/meetinglawyers/ios-cocoapods-specs.git": {
+            "source": "https://bitbucket.org/meetinglawyers/ios-cocoapods-specs.git",
+            "count": 1
+        },
+        "https://github.com/MeetingLawyers/ios-meeting-podspec.git": {
+            "source": "https://github.com/MeetingLawyers/ios-meeting-podspec.git",
+            "count": 1
+        }
+    },
+    "libraries": {
+        "MeetingLawyers": {
+            "name": "MeetingLawyers",
+            "spec": "0.2.7",
+            "count": 1
+        }
+    }
+}
